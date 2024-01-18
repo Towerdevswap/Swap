@@ -1,0 +1,30 @@
+{
+  "name": "Pancake Default List",
+  "timestamp": "2022-01-26T11:45:09Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://pancakeswap.finance/logo.png",
+  "keywords": ["pancake", "default"],
+  "tokens": [
+    {
+      "name": "Wrapped ONLY",
+      "symbol": "WONLY",
+      "address": "0x499FE85471EB1D3A4d2175244FC32f93D5569755",
+      "chainId": 728290,
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/jJ7hxGd/728290.png"
+    },
+    {
+      "name": "OnlyFi Token",
+      "symbol": "OFI",
+      "address": "0x5aDE361fAb643F429Af1546c5B3ef2d8adf6ebf4",
+      "chainId": 728290,
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/bszgK7W/newlogo2.png"
+    }
+  ]
+}
