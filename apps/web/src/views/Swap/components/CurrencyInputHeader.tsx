@@ -55,7 +55,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = ({
     <Swap.CurrencyInputHeader
       title={
         <Flex width="100%" alignItems="center" justifyContent="space-between" flexDirection="column">
-          <Flex justifyContent="center" scale="xxl" width="100%" height="17px" alignItems="center" mb="10px">
+          <Flex justifyContent="center" width="100%" height="17px" alignItems="center" mb="10px">
             {t('TRADE YOUR FAVORITE TOKEN')}
           </Flex>
           {/*  <Flex justifyContent="center" scale="xxl" width="100%" height="17px" alignItems="center" mb="2px">
