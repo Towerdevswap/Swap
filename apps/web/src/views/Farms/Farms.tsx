@@ -380,7 +380,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
           </Box>
           {chainId === ChainId.ONLY && (
             <Box>
-              // <BCakeBoosterCard />
+               <BCakeBoosterCard />
             </Box>
           )}
         </FarmFlexWrapper>
