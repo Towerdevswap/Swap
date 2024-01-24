@@ -103,7 +103,7 @@ function TradeSummary({
                           style={{ display: 'inline' }}
                           ml="4px"
                           external
-                          href="https://line-swap.gitbook.io/lineswap/"
+                          href="https://onlyfi.gitbook.io/OnlySwap/"
                         >
                           {t('here.')}
                         </Link>

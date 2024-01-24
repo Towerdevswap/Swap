@@ -30,5 +30,5 @@ export const PREDICTION_TOOLTIP_DISMISS_KEY = 'prediction-switcher-dismiss-toolt
 // Gelato uses this address to define a native currency in all chains
 export const GELATO_NATIVE = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 
-export const EXCHANGE_DOCS_URLS = 'https://line-swap.gitbook.io/lineswap/'
-export const EXCHANGE_HELP_URLS = 'https://line-swap.gitbook.io/lineswap/'
+export const EXCHANGE_DOCS_URLS = 'https://onlyfi.gitbook.io/OnlySwap/'
+export const EXCHANGE_HELP_URLS = 'https://onlyfi.gitbook.io/OnlySwap/'

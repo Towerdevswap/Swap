@@ -4,7 +4,7 @@ import { SalesSectionProps } from '.'
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Trade your favorite Token'),
   bodyText: t(
-    'LineSwap is the first dex with an adequate UI for beginners. anyone can trade any token under Linea Blokchain.  ' +
+    'OnlySwap is the first dex with an adequate UI for beginners. anyone can trade any token under Linea Blokchain.  ' +
       'with almost zero fees, lowest slippage and guaranteed asset security will make anyone feel comfortable when trading on our DEX. ',
   ),
   reverse: false,
@@ -14,7 +14,7 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: t('Learn'),
     external: true,
   },
@@ -38,7 +38,7 @@ export const bridgeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: '',
     external: true,
   },
@@ -60,7 +60,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: '',
     external: true,
   },
@@ -78,12 +78,12 @@ export const moreSectionData = (t: TranslateFunction): SalesSectionProps => ({
   ),
   reverse: true,
   primaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: 'Coming Soon',
     external: false,
   },
   secondaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: '',
     external: true,
   },
@@ -100,12 +100,12 @@ export const launchpadSectionData = (t: TranslateFunction): SalesSectionProps =>
   ),
   reverse: false,
   primaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: t('Coming Soon'),
     external: false,
   },
   secondaryButton: {
-    to: 'https://line-swap.gitbook.io/lineswap/',
+    to: 'https://onlyfi.gitbook.io/OnlySwap/',
     text: t(''),
     external: true,
   },

@@ -197,7 +197,7 @@ const config: (
     // },
     {
       label: 'Docs',
-      href: 'https://line-swap.gitbook.io/lineswap/',
+      href: 'https://onlyfi.gitbook.io/OnlySwap/',
       type: DropdownMenuItemType.EXTERNAL_LINK,
       icon: ShareIcon,
       showItemsOnMobile: false,

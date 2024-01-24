@@ -13,7 +13,7 @@ const config = ({ t }: FAQsType) => [
     title: t('How can i use ONLY SWAP'),
     description: [
       t(
-        'follow the tutorial to get some gETH faucets on linea network: https://docs.linea.build/use-linea/fund after you get it you can use lineswap',
+        'follow the tutorial to get some gETH faucets on linea network: https://docs.linea.build/use-linea/fund after you get it you can use OnlySwap',
       ),
     ],
   },

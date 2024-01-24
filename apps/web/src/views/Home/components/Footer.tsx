@@ -113,7 +113,7 @@ const Footer = () => {
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="https://line-swap.gitbook.io/lineswap/">
+        <Link external href="https://onlyfi.gitbook.io/OnlySwap/">
           {t('Learn how to start')}
         </Link>
         {!account && <ConnectWalletButton mt="24px" />}

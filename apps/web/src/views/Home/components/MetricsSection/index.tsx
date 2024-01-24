@@ -53,14 +53,14 @@ const Stats = () => {
       */}
 
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('LineSwap Tokenomic will publish on Mainnet')}
+        {t('OnlySwap Tokenomic will publish on Mainnet')}
       </Text>
 
       <Flex flexDirection={['column', null, null, 'row']}>
         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '16px']}>
           <StatCardContent
             headingText={t('Name')}
-            bodyText={t('LineSwap Token')}
+            bodyText={t('OnlySwap Token')}
             highlightColor={theme.colors.secondary}
           />
         </IconCard>

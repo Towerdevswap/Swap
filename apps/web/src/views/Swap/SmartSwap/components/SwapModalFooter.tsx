@@ -117,7 +117,7 @@ export default function SwapModalFooter({
                   <Text>- {t('%amount% towards CAKE buyback and burn', { amount: buyBackFeePercent })}</Text>
                   <Text mt="12px">
                     {t('For each stableswap trade, refer to the fee table')}
-                    <Link style={{ display: 'inline' }} ml="4px" external href="https://line-swap.gitbook.io/lineswap/">
+                    <Link style={{ display: 'inline' }} ml="4px" external href="https://onlyfi.gitbook.io/OnlySwap/">
                       {t('here.')}
                     </Link>
                   </Text>

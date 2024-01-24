@@ -33,7 +33,7 @@ const BoosterTooltip = () => {
       {t(
         `Boost multiplier is calculated based on the staking conditions from both Farms and fixed-term OFI syrup pool and will be automatically updated upon user actions.`,
       )}
-      <LinkExternal href="https://line-swap.gitbook.io/lineswap/" external>
+      <LinkExternal href="https://onlyfi.gitbook.io/OnlySwap/" external>
         {t('Learn More')}
       </LinkExternal>
     </>

@@ -37,7 +37,7 @@ const SwapTransactionErrorContent = ({ onDismiss, message, openSettingModal }) =
             </Text>
           </Text>
           <LinkExternal
-            href="https://line-swap.gitbook.io/lineswap/"
+            href="https://onlyfi.gitbook.io/OnlySwap/"
             style={{ width: '100%', justifyContent: 'center' }}
           >
             {t('What are the potential issues with the token?')}

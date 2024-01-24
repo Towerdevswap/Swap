@@ -42,7 +42,7 @@ const PerpetualBanner = () => {
   const { isDesktop, isMobile } = useMatchBreakpoints()
   const { isDark } = useTheme()
 
-  const perpetualUrl = useMemo(() => `https://lineswap.exchange/farms`, [code, isDark])
+  const perpetualUrl = useMemo(() => `https://onlyfi.org/farms`, [code, isDark])
   const headerRef = useRef<HTMLDivElement>(null)
 
   useIsomorphicEffect(() => {

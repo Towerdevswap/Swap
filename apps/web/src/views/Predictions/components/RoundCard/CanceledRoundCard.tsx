@@ -38,7 +38,7 @@ const CanceledRoundCard: React.FC<React.PropsWithChildren<CanceledRoundCardProps
               {t('Round Cancelled')}
             </Text>
             {isRefundable && <ReclaimPositionButton epoch={epoch} onSuccess={handleSuccess} width="100%" my="8px" />}
-            <LinkExternal href="https://line-swap.gitbook.io/lineswap/" external>
+            <LinkExternal href="https://onlyfi.gitbook.io/OnlySwap/" external>
               {t('Learn More')}
             </LinkExternal>
           </Flex>

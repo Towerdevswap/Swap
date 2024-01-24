@@ -2,7 +2,8 @@ import { rinkeby, mainnet, goerli } from 'wagmi/chains'
 import { Chain } from 'wagmi'
 
 export const only: Chain = {
-  id: 728290,
+  // id: 728290,
+  id: 728696,
   name: 'Only Layer',
   network: 'ONLY',
   rpcUrls: {

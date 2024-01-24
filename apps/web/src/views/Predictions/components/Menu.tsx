@@ -80,7 +80,7 @@ const Menu = () => {
                 <Button
                   variant="subtle"
                   as="a"
-                  href="https://line-swap.gitbook.io/lineswap/"
+                  href="https://onlyfi.gitbook.io/OnlySwap/"
                   target="_blank"
                   rel="noreferrer noopener"
                   width="48px"

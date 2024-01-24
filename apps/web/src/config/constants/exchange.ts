@@ -123,6 +123,6 @@ export const DEFAULT_OUTPUT_CURRENCY = '0x5aDE361fAb643F429Af1546c5B3ef2d8adf6eb
 export const GELATO_HANDLER = 'pancakeswap'
 export const GENERIC_GAS_LIMIT_ORDER_EXECUTION = BigNumber.from(500000)
 
-export const LIMIT_ORDERS_DOCS_URL = 'https://line-swap.gitbook.io/lineswap/'
+export const LIMIT_ORDERS_DOCS_URL = 'https://onlyfi.gitbook.io/OnlySwap/'
 
 export const EXCHANGE_PAGE_PATHS = ['/swap', '/limit-orders', 'liquidity', '/add', '/find', '/remove']
