@@ -5,7 +5,7 @@ import cakeVaultAbi from 'config/abi/cakeVaultV2.json'
 import { getCakeVaultAddress, getCakeFlexibleSideVaultAddress } from 'utils/addressHelpers'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { ChainId } from '@pancakeswap/sdk'
-import { LINE } from '@pancakeswap/tokens'
+import { OFI } from '@pancakeswap/tokens'
 
 const cakeVaultV2 = getCakeVaultAddress()
 const cakeFlexibleSideVaultV2 = getCakeFlexibleSideVaultAddress()
@@ -19,7 +19,7 @@ export const fetchPublicVaultData = async (cakeVaultAddress = cakeVaultV2) => {
 
     const cakeBalanceOfCall = {
       abi: cakeAbi,
-      address: LINE[ChainId.ONLY].address,
+      address: OFI[ChainId.ONLY].address,
       name: 'balanceOf',
       params: [cakeVaultV2],
     }
@@ -58,7 +58,7 @@ export const fetchPublicFlexibleSideVaultData = async (cakeVaultAddress = cakeFl
 
     const cakeBalanceOfCall = {
       abi: cakeAbi,
-      address: LINE[ChainId.ONLY].address,
+      address: OFI[ChainId.ONLY].address,
       name: 'balanceOf',
       params: [cakeVaultAddress],
     }

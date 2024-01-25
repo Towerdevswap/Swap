@@ -24,7 +24,7 @@ export const vaultPoolConfig = {
     },
   },
   [VaultKey.CakeVault]: {
-    name: <Trans>Stake LINE</Trans>,
+    name: <Trans>Stake ETH</Trans>,
     description: <Trans>Stake, Earn – And more!</Trans>,
     autoCompoundFrequency: 5000,
     gasLimit: 600000,
@@ -34,7 +34,7 @@ export const vaultPoolConfig = {
     },
   },
   [VaultKey.CakeFlexibleSideVault]: {
-    name: <Trans>Flexible LINE</Trans>,
+    name: <Trans>Flexible ETH</Trans>,
     description: <Trans>Flexible staking on the side.</Trans>,
     autoCompoundFrequency: 5000,
     gasLimit: 500000,
@@ -61,7 +61,7 @@ export const livePools: Pool.SerializedPoolConfig<SerializedWrappedToken>[] = [
     stakingToken: testnetTokens.line,
     earningToken: testnetTokens.line,
     contractAddress: {
-      728290: '0xd964CB5A5cE6B7c8fA26796760F8A5AeE9bee1a1',
+      728696: '0xd964CB5A5cE6B7c8fA26796760F8A5AeE9bee1a1',
       56: '',
     },
     poolCategory: PoolCategory.CORE,

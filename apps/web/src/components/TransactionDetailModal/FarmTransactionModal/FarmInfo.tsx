@@ -64,7 +64,7 @@ const FarmResult: React.FC<React.PropsWithChildren<FarmInfoProps>> = ({ pickedDa
     <Flex flexDirection="column">
       <ListStyle>{t('You have received 0.0005 CMP as a first-time Caduceus Chain user')}</ListStyle>
       <ListStyle>
-        {t('You can swap more CMP on')}
+        {t('You can swap more ETH on')}
         <LinkStyle href="/swap">{t('Swap.')}</LinkStyle>
       </ListStyle>
       <ListStyle>
@@ -72,7 +72,7 @@ const FarmResult: React.FC<React.PropsWithChildren<FarmInfoProps>> = ({ pickedDa
         <LinkStyle href="/pools?chainId=56">{t('Pools')}</LinkStyle>
         {t('and')}
         <LinkStyle href="/prediction?chainId=56">{t('Win')}</LinkStyle>
-        {t('with your LINE earned.')}
+        {t('with your  earned.')}
       </ListStyle>
     </Flex>,
     { placement: 'top' },

@@ -11,20 +11,28 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "Wrapped ONLY",
-      "symbol": "WONLY",
-      "address": "0x499FE85471EB1D3A4d2175244FC32f93D5569755",
-      "chainId": 728290,
+      "name": "Wrapped ETH",
+      "symbol": "ETH",
+      "address": "0xaF56dAa09dD5C6eF1e72fC9cEf34CDf48AB33303",
+      "chainId": 728696,
       "decimals": 18,
-      "logoURI": "https://i.ibb.co/jJ7hxGd/728290.png"
+      "logoURI": "https://cdn.worldvectorlogo.com/logos/ethereum-eth.svg"
     },
     {
       "name": "OnlyFi Token",
       "symbol": "OFI",
-      "address": "0x5aDE361fAb643F429Af1546c5B3ef2d8adf6ebf4",
-      "chainId": 728290,
+      "address": "0x676C1F954529dC32dA1B038D13Af1ea83cEdc772",
+      "chainId": 728696,
       "decimals": 18,
       "logoURI": "https://i.ibb.co/bszgK7W/newlogo2.png"
+    },
+    {
+      "name": "Test Tether USD",
+      "symbol": "tUSDT",
+      "address": "0x373ab82128611bdB3BC1db33F4215b3e1be1DFf2",
+      "chainId": 728696,
+      "decimals": 18,
+      "logoURI": "https://cdn.worldvectorlogo.com/logos/tether-1.svg"
     }
   ]
 }

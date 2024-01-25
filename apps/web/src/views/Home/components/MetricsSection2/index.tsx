@@ -26,36 +26,10 @@ const Stats = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
-      <Heading textAlign="center" color="#fff" scale="xxl" mb="32px">
+      <Heading textAlign="center" color="#f6f2ff" scale="xxl" mt="100px" mb="32px">
         {t('OnlySwap Exchange')}
       </Heading>
-      {/* <GradientLogo height="350x" width="350px" mb="24px" /> */}
-      {/* <Heading textAlign="center" scale="xl" mb="32px"> */}
-      {/*   {t('Trusted with billions.')} */}
-      {/* </Heading> */}
-      {/*
-      <Flex flexWrap="wrap">
-        <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
-          {entrusting}
-          <>{tvl ? <>{tvlString}</> : <Skeleton display="inline-block" height={16} width={70} mt="2px" />}</>
-          {inFunds}
-        </Text>
-      </Flex>
-      */}
-
-      <Text textAlign="center" color="#fff" bold mb="40px">
+      <Text textAlign="center" color="#f6f2ff" bold mb="40px">
         {t('The First Decentralized Exchange build on OnlyLayer Network')}
       </Text>
       <Flex>
@@ -64,15 +38,6 @@ const Stats = () => {
           <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
         </NextLinkFromReactRouter>
       </Flex>
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
-      <Text textAlign="center" color="white" bold mb="32px">
-        {t('')}
-      </Text>
     </Flex>
   )
 }

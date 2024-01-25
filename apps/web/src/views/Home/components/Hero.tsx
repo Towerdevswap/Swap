@@ -4,7 +4,7 @@ import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from '@pancakeswap/localization'
 import Image from 'next/legacy/image'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/home/lunar-bunny/astronaut-bunni.png'
+import bunnyImage from '../../../../public/images/home/lunar-bunny/hero.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
@@ -108,7 +108,6 @@ const Hero = () => {
       <BgWrapper>
         <InnerWrapper>
           <SlideSvgDark className="slide-svg-dark" width="100%" />
-          <SlideSvgLight className="slide-svg-light" width="100%" />
         </InnerWrapper>
       </BgWrapper>
       <Flex
@@ -120,11 +119,11 @@ const Hero = () => {
         id="homepage-hero"
       >
         <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="black" mb="24px">
+          <Heading scale="xxl" color="#f6f2ff" mb="24px">
             {t('OnlySwap Finance')}
           </Heading>
-          <Heading scale="md" color="black" mb="24px">
-            {t('The First Decentralized Exchange built on Mantle Network')}
+          <Heading scale="md" color="#f6f2ff" mb="24px">
+            {t('The First Decentralized Exchange build on OnlyLayer Network')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

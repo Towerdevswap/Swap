@@ -69,7 +69,7 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
           content="OnlySwap, the leading DEX on OnlyLayer Chain with the best farms in DeFi and a lottery for BDF Tokens."
         />
         <meta name="theme-color" content="#1FC7D4" />
-        <meta name="twitter:image" content="https://i.ibb.co/Bz7nxLg/hero.png" />
+        <meta name="twitter:image" content="https://i.ibb.co/z5QKnmV/twitter-banner.png" />
         <meta name="twitter:description" content="The new DeFi AMM on OnlyLayer!" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="OnlySwap - A Decentralized exchange built on the OnlyLayer network." />

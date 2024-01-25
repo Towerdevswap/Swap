@@ -49,7 +49,7 @@ const config: (
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/swap',
-      showItemsOnMobile: false,
+      showItemsOnMobile: true,
       items: [
         /*
         {
@@ -89,7 +89,7 @@ const config: (
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/liquidity',
-      showItemsOnMobile: false,
+      showItemsOnMobile: true,
       items: [
         /*
         {
@@ -202,20 +202,16 @@ const config: (
       icon: ShareIcon,
       showItemsOnMobile: false,
       hideSubNav: true,
-      items: [
-        /*
-        {
-          label: t('Docs'),
-          href: 'https://towerswap.gitbook.io/towerswap-finance',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: t('PitchDeck'),
-          href: 'https://docdro.id/thzR1J1',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        */
-      ].map((item) => addMenuItemSupported(item, chainId)),
+      items: [].map((item) => addMenuItemSupported(item, chainId)),
+    },
+    {
+      label: 'Bridge',
+      href: 'https://onlybridge.org',
+      type: DropdownMenuItemType.EXTERNAL_LINK,
+      icon: ShareIcon,
+      showItemsOnMobile: true,
+      hideSubNav: true,
+      items: [].map((item) => addMenuItemSupported(item, chainId)),
     },
     /*
     {

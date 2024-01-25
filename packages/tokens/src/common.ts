@@ -29,7 +29,7 @@ export const TOWER_MAINNET = new ERC20Token(
 
 export const OFI_TESTNET = new ERC20Token(
   ChainId.ONLY,
-  '0x2B184fAc05306115F21ee7B8eA04EA2B2FFCB3b0',
+  '0x676C1F954529dC32dA1B038D13Af1ea83cEdc772',
   18,
   'OFI',
   'OnlyFi Token',
@@ -97,13 +97,13 @@ export const USDT_ETH = new ERC20Token(
   'https://tether.to/',
 )
 
-export const USDT_LINE = new ERC20Token(
+export const USDT_OFI = new ERC20Token(
   ChainId.ONLY,
-  '0x5aDE361fAb643F429Af1546c5B3ef2d8adf6ebf4',
+  '0x373ab82128611bdB3BC1db33F4215b3e1be1DFf2',
   18,
-  'USDT',
-  'Testnet USD',
-  'https://lineswap.exchange',
+  'tUSDT',
+  'Test Tether USD',
+  'https://onlyfi.org',
 )
 
 export const BUSD_BSC = new ERC20Token(
@@ -180,6 +180,10 @@ export const LINE = {
   [ChainId.ONLY]: OFI_TESTNET,
 }
 
+export const OFI = {
+  [ChainId.ONLY]: OFI_TESTNET,
+}
+
 export const USDC = {
   [ChainId.BSC]: USDC_BSC,
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
@@ -191,7 +195,7 @@ export const USDT = {
   [ChainId.BSC]: USDT_BSC,
   [ChainId.ETHEREUM]: USDT_ETH,
   [ChainId.CMP]: USDT_CMP,
-  [ChainId.ONLY]: USDT_LINE,
+  [ChainId.ONLY]: USDT_OFI,
 }
 
 export const WBTC_ETH = new ERC20Token(

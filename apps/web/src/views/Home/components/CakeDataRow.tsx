@@ -41,10 +41,13 @@ const StyledColumn = styled(Flex)<{ noMobileBorder?: boolean; noDesktopBorder?: 
 
 const Grid = styled.div`
   justifycontent: center;
+  border: 2px white solid;
+  border-radis: 20px;
+  background: white;
+  padding: 30px;
   alignitems: center;
   display: grid;
   grid-gap: 16px 8px;
-  margin-top: 24px;
   grid-template-columns: repeat(2, auto);
   grid-template-areas:
     'a b'
@@ -56,8 +59,8 @@ const Grid = styled.div`
 
   ${({ theme }) => theme.mediaQueries.md} {
     grid-template-areas: 'a b c d';
-    grid-gap: 32px;
-    grid-template-columns: repeat(4, auto);
+    grid-gap: 64px;
+    grid-template-columns: repeat(2, auto);
   }
 `
 
@@ -130,7 +133,7 @@ const CakeDataRow = () => {
   return (
     <Grid>
       <Flex flexDirection="column" justifyContent="center" style={{ gridArea: 'a' }}>
-        <Text color="#fff">{t('Circulating Supply')}</Text>
+        <Text color="black">{t('Circulating Supply')}</Text>
         {circulatingSupply ? (
           <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={circulatingSupply} />
         ) : (
@@ -138,7 +141,7 @@ const CakeDataRow = () => {
         )}
       </Flex>
       <StyledColumn noMobileBorder style={{ gridArea: 'b' }}>
-        <Text color="#fff">{t('Total supply')}</Text>
+        <Text color="black">{t('Total supply')}</Text>
         {cakeSupply ? (
           <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={cakeSupply} />
         ) : (
@@ -149,7 +152,7 @@ const CakeDataRow = () => {
         )}
       </StyledColumn>
       <StyledColumn noDesktopBorder style={{ gridArea: 'c' }}>
-        <Text color="#fff">{t('Market cap')}</Text>
+        <Text color="black">{t('Market cap')}</Text>
         {mcap?.gt(0) && mcapString ? (
           <Heading scale="lg">{t('$%marketCap%', { marketCap: mcapString })}</Heading>
         ) : (
@@ -157,7 +160,7 @@ const CakeDataRow = () => {
         )}
       </StyledColumn>
       <StyledColumn style={{ gridArea: 'd' }}>
-        <Text color="#fff">{t('Burn')}</Text>
+        <Text color="black">{t('Burn')}</Text>
         {burnedBalance ? (
           <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={burnedBalance} />
         ) : (

@@ -105,7 +105,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             <Button
               data-theme={isDark ? "dark" : "light"}
               as="a"
-              href="https://lineswap.exchange/swap"
+              href="https://onlyfi.org/swap"
               target="_blank"
               scale="sm"
               endIcon={<ArrowForwardIcon color="backgroundAlt" />}

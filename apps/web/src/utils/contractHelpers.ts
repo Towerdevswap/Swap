@@ -4,7 +4,7 @@ import { provider } from 'utils/wagmi'
 import { Contract } from '@ethersproject/contracts'
 import poolsConfig from 'config/constants/pools'
 import { PoolCategory } from 'config/constants/types'
-import { LINE } from '@pancakeswap/tokens'
+import { OFI } from '@pancakeswap/tokens'
 
 // Addresses
 import {
@@ -199,7 +199,7 @@ export const getPointCenterIfoContract = (signer?: Signer | Provider) => {
 export const getCakeContract = (signer?: Signer | Provider, chainId?: number) => {
   return getContract({
     abi: cakeAbi,
-    address: chainId ? LINE[chainId].address : LINE[ChainId.ONLY].address,
+    address: chainId ? OFI[chainId].address : OFI[ChainId.ONLY].address,
     signer,
   }) as Cake
 }

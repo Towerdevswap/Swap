@@ -25,7 +25,7 @@ const initialData = {
       97: '',
       56: '',
       256256: '0xd964CB5A5cE6B7c8fA26796760F8A5AeE9bee1a1',
-      728290: '',
+      728696: '',
     },
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '100',

@@ -14,6 +14,10 @@ export interface Props {
 const PriceLink = styled.a`
   display: flex;
   align-items: center;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 8px;
+  background: #bebebe;
   svg {
     transition: transform 0.3s;
   }
@@ -30,9 +34,9 @@ const CakePrice: React.FC<React.PropsWithChildren<Props>> = ({
   showSkeleton = true,
 }) => {
   return cakePriceUsd ? (
-    <PriceLink href="https://lineswap.exchange/swap" target="_blank">
+    <PriceLink href="https://onlyfi.org/swap" target="_blank" >
       <LogoRound width="24px" mr="8px" />
-      <Text color={color} bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
+      <Text color="black" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : showSkeleton ? (
     <Skeleton width={80} height={24} />

@@ -7,7 +7,7 @@ import { PageMeta } from 'components/Layout/Page'
 import { useTranslation } from '@pancakeswap/localization'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { ChainId } from '@pancakeswap/sdk'
-// import Hero from './components/Hero'
+import Hero from './components/Hero'
 import {
   swapSectionData,
   earnSectionData,
@@ -17,6 +17,7 @@ import {
 } from './components/SalesSection/data'
 import MetricsSection2 from './components/MetricsSection2'
 import MetricsSection from './components/MetricsSection'
+import MetricsSection3 from './components/MetricsSection3'
 import SalesSection from './components/SalesSection'
 import RoadmapSection from './components/RoadmapSection'
 import FaqSection from './components/FaqSection'
@@ -26,7 +27,7 @@ import FarmsPoolsRow from './components/FarmsPoolsRow'
 import CakeDataRow from './components/CakeDataRow'
 // import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 // import UserBanner from './components/UserBanner'
-// import MultipleBanner from './components/Banners/MultipleBanner'
+import MultipleBanner from './components/Banners/MultipleBanner'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
@@ -76,13 +77,28 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       `}</style>
       <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
-        background="radial-gradient(circle, rgba(255,255,255,0.1518732492997199) 0%, rgba(8,6,11,1) 93%);"
+        backgroundImage="#012a1f"
         index={2}
         hasCurvedDivider={false}
       >
-        <MetricsSection2 />
-        <CakeDataRow />
+        {/* <MetricsSection2 /> */}
+        <Hero />
       </StyledHeroSection>
+      <PageSection
+      backgroundImage="#012a1f"
+      index={2}
+      hasCurvedDivider={false}
+      >
+        <CakeDataRow />
+      </PageSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        backgroundImage="#012a1f"
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <MetricsSection3 />
+      </PageSection>
       {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="white"
@@ -101,10 +117,8 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         hasCurvedDivider={false}
       >
         <SalesSection {...bridgeSectionData(t)} />
-        {/* TODO: until we are enable fetch multi-chain farms */}
-      {/* {chainId === ChainId.BSC && <FarmsPoolsRow />}
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="linear-gradient(180deg, rgba(0,0,0,0.3479516806722689) 2%, rgba(255,255,255,1) 55%);"
         index={2}

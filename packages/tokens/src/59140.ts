@@ -10,7 +10,7 @@ export const testnetTokens = {
     18,
     'Syrup',
     'SyrupBar Token',
-    'https://Lineswap.Exchange',
+    'https://onlyfi.org',
   ),
   usdt: new ERC20Token(
     ChainId.ONLY,
@@ -18,6 +18,6 @@ export const testnetTokens = {
     18,
     'USDT',
     'Testnet USD',
-    'https://lineswap.exchange',
+    'https://onlyfi.org',
   ),
 }
