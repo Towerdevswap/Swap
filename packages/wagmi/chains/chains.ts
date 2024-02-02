@@ -13,7 +13,7 @@ export const only: Chain = {
   blockExplorers: {
     default: {
       name: 'OnlyScan',
-      url: 'http://onlyscan.info ',
+      url: 'http://onlyscan.info/ ',
     },
   },
 }
