@@ -84,24 +84,23 @@ export const socials = [
   },
   {
     label: "Discord",
-    icon: TelegramIcon,
-    href: "https://twitter.com/OnlyFinance",
+    icon: DiscordIcon,
+    href: "https://discord.com/invite/6q8a49b5xu",
   },
-  /* {
-    label: "Discord",
+   {
+    label: "Telegram",
     icon: TelegramIcon,
     items: [
       {
         label: "Global",
         href: "https://discord.gg/M5RP4eAvsv",
       },
-      /*
       {
         label: "Announcements",
         href: "https://t.me/towerfiAnn",
       },
     ],
-  }, */
+  },
 ];
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({
