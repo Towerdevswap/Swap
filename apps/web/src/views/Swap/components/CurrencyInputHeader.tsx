@@ -7,7 +7,11 @@ import {
   HotDisableIcon,
   IconButton,
   NotificationDot,
+  BridgeIcon,
+  FaucetIcon,
+  DocsIcon,
   Swap,
+  Link,
   useModal,
 } from '@pancakeswap/uikit'
 import TransactionsModal from 'components/App/Transactions/TransactionsModal'
@@ -54,9 +58,11 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = ({
   return (
     <Swap.CurrencyInputHeader
       title={
-        <Flex width="100%" alignItems="center" justifyContent="space-between" flexDirection="column">
-          <Flex justifyContent="center" width="100%" height="17px" alignItems="center" mb="10px">
-            {t('TRADE YOUR FAVORITE TOKEN')}
+        <Flex width="100%" alignItems="center" >
+          <Flex width="100%">
+            <IconButton as={Link} href="https://sepoliafaucet.com/" variant="text" pt="10px" scale="sm">
+            {t('Faucet Guide 📑')}
+            </IconButton>
           </Flex>
           {/*  <Flex justifyContent="center" scale="xxl" width="100%" height="17px" alignItems="center" mb="2px">
             <Swap.CurrencyInputHeaderSubTitle>Trade your Favorite Tokens</Swap.CurrencyInputHeaderSubTitle>
@@ -104,8 +110,14 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = ({
             <IconButton onClick={onPresentTransactionsModal} variant="text" scale="sm">
               <HistoryIcon color="textSubtle" width="24px" />
             </IconButton>
-            <IconButton variant="text" scale="sm" onClick={handleOnClick}>
+            <IconButton variant="text" scale="sm" onClick={handleOnClick}  mr="2px">
               <RefreshIcon disabled={!hasAmount} color="textSubtle" width="27px" />
+            </IconButton>
+            <IconButton as={Link} href="https://onlybridge.org" variant="text" scale="sm" mr="7px">
+              <BridgeIcon color="textSubtle" width="24px" />
+            </IconButton>
+            <IconButton as={Link} href="https://sepoliafaucet.com/" variant="text" scale="sm">
+              <FaucetIcon color="textSubtle" width="24px" />
             </IconButton>
           </Flex>
         </Flex>

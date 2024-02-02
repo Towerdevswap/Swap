@@ -29,7 +29,7 @@ export const TOWER_MAINNET = new ERC20Token(
 
 export const OFI_TESTNET = new ERC20Token(
   ChainId.ONLY,
-  '0x676C1F954529dC32dA1B038D13Af1ea83cEdc772',
+  '0xF6b74a6ca157e990B55B822558CBE5D3147BE508',
   18,
   'OFI',
   'OnlyFi Token',
@@ -99,7 +99,7 @@ export const USDT_ETH = new ERC20Token(
 
 export const USDT_OFI = new ERC20Token(
   ChainId.ONLY,
-  '0x373ab82128611bdB3BC1db33F4215b3e1be1DFf2',
+  '0x676C1F954529dC32dA1B038D13Af1ea83cEdc772',
   18,
   'tUSDT',
   'Test Tether USD',

@@ -80,9 +80,14 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/Line_swap",
+    href: "https://twitter.com/OnlyFinance01",
   },
   {
+    label: "Discord",
+    icon: TelegramIcon,
+    href: "https://twitter.com/OnlyFinance",
+  },
+  /* {
     label: "Discord",
     icon: TelegramIcon,
     items: [
@@ -95,9 +100,8 @@ export const socials = [
         label: "Announcements",
         href: "https://t.me/towerfiAnn",
       },
-      */
     ],
-  },
+  }, */
 ];
 
 export const langs: Language[] = [...Array(20)].map((_, i) => ({

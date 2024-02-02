@@ -13,7 +13,7 @@
     {
       "name": "Wrapped ETH",
       "symbol": "ETH",
-      "address": "0xaF56dAa09dD5C6eF1e72fC9cEf34CDf48AB33303",
+      "address": "0xcF2D86B78E12A08EF3373eE3B0d1D2a1370a7B2F",
       "chainId": 728696,
       "decimals": 18,
       "logoURI": "https://cdn.worldvectorlogo.com/logos/ethereum-eth.svg"
@@ -21,15 +21,15 @@
     {
       "name": "OnlyFi Token",
       "symbol": "OFI",
-      "address": "0x676C1F954529dC32dA1B038D13Af1ea83cEdc772",
+      "address": "0xF6b74a6ca157e990B55B822558CBE5D3147BE508",
       "chainId": 728696,
       "decimals": 18,
       "logoURI": "https://i.ibb.co/bszgK7W/newlogo2.png"
     },
     {
-      "name": "Test Tether USD",
-      "symbol": "tUSDT",
-      "address": "0x373ab82128611bdB3BC1db33F4215b3e1be1DFf2",
+      "name": "onlyUSD",
+      "symbol": "oUSD",
+      "address": "0x676C1F954529dC32dA1B038D13Af1ea83cEdc772",
       "chainId": 728696,
       "decimals": 18,
       "logoURI": "https://cdn.worldvectorlogo.com/logos/tether-1.svg"

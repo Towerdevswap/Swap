@@ -21,7 +21,7 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
   [ChainId.CMP]: '0x55A9f6AA17886DC17E407b3Ec4570f0CA8b9704a', //unverify contract
-  [ChainId.ONLY]: '0xcF2D86B78E12A08EF3373eE3B0d1D2a1370a7B2F',
+  [ChainId.ONLY]: '0xaF56dAa09dD5C6eF1e72fC9cEf34CDf48AB33303',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
@@ -33,7 +33,7 @@ export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
   [ChainId.CMP]: '0xf6106b14de90ff9d265a71eb198a4c0cb6eb1e3eb65b5d976cd5c6466315e7ae',
-  [ChainId.ONLY]: '0xb15371f5ad2e50763f8b505712fbcec04b91f791ba5ad36fae948c447750d459',
+  [ChainId.ONLY]: '0x392e220acad84b78ac17542931d73dfa5695a47e65e989e4d2d70d35590b0731',
 }
 
 export const WETH9 = {
@@ -98,7 +98,7 @@ export const WBNB = {
   ),
   [ChainId.ONLY]: new ERC20Token(
     ChainId.ONLY,
-    '0xaF56dAa09dD5C6eF1e72fC9cEf34CDf48AB33303',
+    '0xcF2D86B78E12A08EF3373eE3B0d1D2a1370a7B2F',
     18,
     'WETH',
     'Wrapped ETH',

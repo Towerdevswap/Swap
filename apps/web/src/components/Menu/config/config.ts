@@ -6,7 +6,7 @@ import {
   EarnFillIcon,
   EarnIcon,
   TrophyIcon,
-  ShareIcon,
+  DocsIcon,
   TrophyFillIcon,
   NftIcon,
   NftFillIcon,
@@ -49,7 +49,8 @@ const config: (
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/swap',
-      showItemsOnMobile: true,
+      showItemsOnMobile: false,
+      hideSubNav: true,
       items: [
         /*
         {
@@ -89,7 +90,8 @@ const config: (
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/liquidity',
-      showItemsOnMobile: true,
+      showItemsOnMobile: false,
+      hideSubNav: true,
       items: [
         /*
         {
@@ -199,20 +201,20 @@ const config: (
       label: 'Docs',
       href: 'https://onlyfi.gitbook.io/OnlySwap/',
       type: DropdownMenuItemType.EXTERNAL_LINK,
-      icon: ShareIcon,
+      icon: DocsIcon,
       showItemsOnMobile: false,
       hideSubNav: true,
       items: [].map((item) => addMenuItemSupported(item, chainId)),
     },
-    {
-      label: 'Bridge',
-      href: 'https://onlybridge.org',
-      type: DropdownMenuItemType.EXTERNAL_LINK,
-      icon: ShareIcon,
-      showItemsOnMobile: true,
-      hideSubNav: true,
-      items: [].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    // {
+    //   label: 'Bridge',
+    //   href: 'https://onlybridge.org',
+    //   type: DropdownMenuItemType.EXTERNAL_LINK,
+    //   icon: DocsIcon,
+    //   showItemsOnMobile: true,
+    //   hideSubNav: true,
+    //   items: [].map((item) => addMenuItemSupported(item, chainId)),
+    // },
     /*
     {
       label: 'Mainnet',

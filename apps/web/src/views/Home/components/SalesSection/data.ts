@@ -4,7 +4,7 @@ import { SalesSectionProps } from '.'
 export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Trade your favorite Token'),
   bodyText: t(
-    'OnlySwap is the first dex with an adequate UI for beginners. anyone can trade any token under Linea Blokchain.  ' +
+    'OnlySwap is the first dex with an adequate UI for beginners. anyone can trade any token under OnlyLayer Blokchain.  ' +
       'with almost zero fees, lowest slippage and guaranteed asset security will make anyone feel comfortable when trading on our DEX. ',
   ),
   reverse: false,
