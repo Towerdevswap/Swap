@@ -38,7 +38,7 @@ class MyDocument extends Document {
           )}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&display=optional"
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="/favicon.ico" />
