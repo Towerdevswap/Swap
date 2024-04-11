@@ -33,6 +33,22 @@
       "chainId": 728696,
       "decimals": 18,
       "logoURI": "https://cdn.worldvectorlogo.com/logos/tether-1.svg"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x38CBBC73d90132a435e8eaaa7CeD5267CB9d5b8e",
+      "chainId": 728696,
+      "decimals": 18,
+      "logoURI": "https://cryptologos.cc/logos/tether-usdt-logo.png"
+    },
+    {
+      "name": "USD COIN",
+      "symbol": "USDC",
+      "address": "0x4B2e0F18810c8905E3C376aa05f414c571053663",
+      "chainId": 728696,
+      "decimals": 18,
+      "logoURI": "https://cryptologos.cc/logos/usd-coin-usdc-logo.png"
     }
   ]
 }

@@ -99,10 +99,19 @@ export const USDT_ETH = new ERC20Token(
 
 export const USDT_OFI = new ERC20Token(
   ChainId.ONLY,
-  '0x676C1F954529dC32dA1B038D13Af1ea83cEdc772',
+  '0x38CBBC73d90132a435e8eaaa7CeD5267CB9d5b8e',
   18,
-  'tUSDT',
-  'Test Tether USD',
+  'USDT',
+  'Tether USD',
+  'https://onlyfi.org',
+)
+
+export const USDC_OFI = new ERC20Token(
+  ChainId.ONLY,
+  '0x4B2e0F18810c8905E3C376aa05f414c571053663',
+  18,
+  'USDC',
+  'USD COIN',
   'https://onlyfi.org',
 )
 
@@ -189,6 +198,7 @@ export const USDC = {
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,
+  [ChainId.ONLY]: USDC_OFI,
 }
 
 export const USDT = {

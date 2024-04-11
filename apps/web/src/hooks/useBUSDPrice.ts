@@ -171,7 +171,7 @@ export const useCakeBusdPrice = (
   const isTestnet = !forceMainnet && isChainTestnet(chainId)
   // Return bsc testnet cake if chain is testnet
   const cake: Token = isTestnet ? OFI[ChainId.BSC] : OFI[ChainId.ONLY]
-  return usePriceByPairs(USDT[cake.chainId], cake)
+  return usePriceByPairs(USDC[cake.chainId], cake)
 }
 
 // @Note: only fetch from one pair
@@ -182,5 +182,5 @@ export const useBNBBusdPrice = (
   const isTestnet = !forceMainnet && isChainTestnet(chainId)
   // Return bsc testnet wbnb if chain is testnet
   const wbnb: Token = isTestnet ? WBNB[ChainId.BSC] : WBNB[ChainId.ONLY]
-  return usePriceByPairs(USDT[wbnb.chainId], wbnb)
+  return usePriceByPairs(USDC[wbnb.chainId], wbnb)
 }
