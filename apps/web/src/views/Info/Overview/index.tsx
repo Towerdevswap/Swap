@@ -82,7 +82,7 @@ const Overview: React.FC<React.PropsWithChildren> = () => {
         </Message>
       )}
       <Heading scale="lg" mb="16px" id="info-overview-title">
-        {t('TowerSwap Info & Analytics')}
+        {t('OnlySwap Info & Analytics')}
       </Heading>
       <ChartCardsContainer>
         <Card>

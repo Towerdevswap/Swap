@@ -5,7 +5,7 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'OnlySwap',
   description: 'The first DEFI AMM built on OnlyLayer Network.',
-  image: 'https://i.ibb.co/Bz7nxLg/hero.png',
+  image: 'https://i.ibb.co.com/2gsPZGZ/Meta-Banner.png',
 }
 
 interface PathList {

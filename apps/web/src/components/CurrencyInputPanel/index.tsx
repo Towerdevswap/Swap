@@ -163,8 +163,9 @@ export default function CurrencyInputPanel({
         >
           Balance
           {!hideBalance && !!currency
-            ? t(': $%balance%', { balance: selectedCurrencyBalance?.toSignificant(6) ?? t('Loading') })
+            ? t(': %balance%', { balance: selectedCurrencyBalance?.toSignificant(6) ?? t('Loading') })
             : ' -'}
+
         </Text>
       )}
       <Flex alignItems="center" justifyContent="space-between">
