@@ -54,7 +54,7 @@ const StyledFeaturesHeading = styled(Heading)`
 
 const cardData = [
   {
-    imageUrl: 'https://i.ibb.co/MSB796P/trade.png',
+    imageUrl: 'https://i.ibb.co.com/DCSdq1Y/trade.png',
     title: 'Trading',
     description: 'Core functionality of decentralized exchange. Exchange cryptocurrencies seamlessly.',
     buttonText: 'Start Trading',
@@ -62,7 +62,7 @@ const cardData = [
     icon:'',
   },
   {
-    imageUrl: 'https://i.ibb.co/fxwmxhy/Mining.png',
+    imageUrl: 'https://i.ibb.co.com/1nk8nVh/Mining.png',
     title: 'Earning',
     description: 'Earn feature encompasses Staking and Farming, maximizing returns on cryptocurrencies.',
     buttonText: 'Start Earning',
@@ -70,7 +70,7 @@ const cardData = [
     icon:'',
   },
   {
-    imageUrl: 'https://i.ibb.co/WGGTYCD/rocket.png',
+    imageUrl: 'https://i.ibb.co.com/N3mNhkb/rocket.png',
     title: 'LaunchPad',
     description: 'OnlyFi Launchpad feature facilitates the launch of new cryptocurrency projects or tokens.',
     buttonText: 'Launch Now',
@@ -78,7 +78,7 @@ const cardData = [
     icon:'',
   },
   {
-    imageUrl: 'https://i.ibb.co/s1qrDsz/4533156.png',
+    imageUrl: 'https://i.ibb.co.com/9b1KcYf/4533156.png',
     title: 'MarketPlace',
     description: 'OnlyFI MarketPlace is decentralized martketplace for trading, buying, and selling NFTs.',
     buttonText: 'Explore Marketplace',
