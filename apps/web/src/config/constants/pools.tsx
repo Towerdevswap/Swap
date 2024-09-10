@@ -61,7 +61,7 @@ export const livePools: Pool.SerializedPoolConfig<SerializedWrappedToken>[] = [
     stakingToken: testnetTokens.line,
     earningToken: testnetTokens.line,
     contractAddress: {
-      728696: '0xd964CB5A5cE6B7c8fA26796760F8A5AeE9bee1a1',
+      5820948: '0xd964CB5A5cE6B7c8fA26796760F8A5AeE9bee1a1',
       56: '',
     },
     poolCategory: PoolCategory.CORE,

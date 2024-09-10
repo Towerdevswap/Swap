@@ -7,7 +7,7 @@ export enum ChainId {
   BSC = 56,
   BSC_TESTNET = 97,
   CMP = 256256,
-  ONLY = 728696,
+  ONLY = 5820948,
 }
 
 export const FACTORY_ADDRESS = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
@@ -21,7 +21,7 @@ export const FACTORY_ADDRESS_MAP: Record<number, string> = {
   [ChainId.BSC]: FACTORY_ADDRESS,
   [ChainId.BSC_TESTNET]: '0x6725f303b657a9451d8ba641348b6761a6cc7a17',
   [ChainId.CMP]: '0x55A9f6AA17886DC17E407b3Ec4570f0CA8b9704a', //unverify contract
-  [ChainId.ONLY]: '0xaF56dAa09dD5C6eF1e72fC9cEf34CDf48AB33303',
+  [ChainId.ONLY]: '0xF6b74a6ca157e990B55B822558CBE5D3147BE508',
 }
 export const INIT_CODE_HASH = '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
 
@@ -33,7 +33,7 @@ export const INIT_CODE_HASH_MAP: Record<number, string> = {
   [ChainId.BSC]: INIT_CODE_HASH,
   [ChainId.BSC_TESTNET]: '0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66',
   [ChainId.CMP]: '0xf6106b14de90ff9d265a71eb198a4c0cb6eb1e3eb65b5d976cd5c6466315e7ae',
-  [ChainId.ONLY]: '0x392e220acad84b78ac17542931d73dfa5695a47e65e989e4d2d70d35590b0731',
+  [ChainId.ONLY]: '0x0f55f8c35876b9bff4352abd5e333efe5c79f22801482296e4b062fdc8b9d21d',
 }
 
 export const WETH9 = {

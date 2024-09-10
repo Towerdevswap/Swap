@@ -3,7 +3,7 @@ import { Chain } from 'wagmi'
 
 export const only: Chain = {
   // id: 728290,
-  id: 728696,
+  id: 5820948,
   name: 'Only Layer',
   network: 'ONLY',
   rpcUrls: {
