@@ -1,6 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
+import styled from 'styled-components'
 import { Currency } from '@pancakeswap/sdk'
-import { BottomDrawer, Flex, Modal, ModalV2, useMatchBreakpoints } from '@pancakeswap/uikit'
+import { IconButton, Link, BottomDrawer, Flex, Modal, ModalV2, useMatchBreakpoints } from '@pancakeswap/uikit'
 import { AppBody } from 'components/App'
 import { useContext } from 'react'
 
@@ -9,11 +10,13 @@ import { useCurrency } from '../../hooks/Tokens'
 import { Field } from '../../state/swap/actions'
 import { useSingleTokenSwapInfo, useSwapState } from '../../state/swap/hooks'
 import Page from '../Page'
+import MultipleBanner from '../Home/components/Banners/MultipleBanner'
 import PriceChartContainer from './components/Chart/PriceChartContainer'
 import HotTokenList from './components/HotTokenList'
 import { SmartSwapForm } from './SmartSwap'
 import { StyledInputCurrencyWrapper, StyledSwapContainer } from './styles'
 import { SwapFeaturesContext } from './SwapFeaturesContext'
+
 
 export default function Swap() {
   const { isMobile } = useMatchBreakpoints()

@@ -38,6 +38,7 @@ import { combinedTokenMapFromOfficialsUrlsAtom } from '../../../state/lists/hook
 import AddressInputPanel from '../components/AddressInputPanel'
 import AdvancedSwapDetailsDropdown from '../components/AdvancedSwapDetailsDropdown'
 import CurrencyInputHeader from '../components/CurrencyInputHeader'
+import MeetFiHeader from '../components/MeetFiHeader'
 import { ArrowWrapper, Wrapper } from '../components/styleds'
 import SwapCommitButton from '../components/SwapCommitButton'
 import useRefreshBlockNumberID from '../hooks/useRefreshBlockNumber'
@@ -244,6 +245,7 @@ export function SmartSwapForm() {
 
   return (
     <>
+      <MeetFiHeader title={t('')} subtitle={t('')}/>
       <CurrencyInputHeader title={t('')} subtitle={t('')} hasAmount={hasAmount} onRefreshPrice={onRefreshPrice} />
       <Wrapper id="swap-page" style={{ minHeight: '412px' }}>
         <AutoColumn gap="sm">
