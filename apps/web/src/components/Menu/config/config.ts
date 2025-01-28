@@ -126,6 +126,15 @@ const config: (
         */
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+    {
+      label: 'AI',
+      href: 'https://ai-agentgit-crtu39p9rtrdyemkqhhyha.streamlit.app/',
+      type: DropdownMenuItemType.EXTERNAL_LINK,
+      icon: DocsIcon,
+      showItemsOnMobile: false,
+      hideSubNav: true,
+      items: [].map((item) => addMenuItemSupported(item, chainId)),
+    },
     // {
     //   label: t('Nest'),
     // /  href: '/farms',

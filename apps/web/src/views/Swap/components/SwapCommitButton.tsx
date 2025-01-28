@@ -1,4 +1,5 @@
 import { useTranslation } from '@pancakeswap/localization'
+import axios from 'axios';
 import { Button, Text, useModal } from '@pancakeswap/uikit'
 import { Currency, CurrencyAmount, Trade, TradeType } from '@pancakeswap/sdk'
 
@@ -99,51 +100,47 @@ export default function SwapCommitButton({
     txHash: undefined,
   })
 
-  const handleSwap = useCallback(async () => {
+const recordSwap = async (swapData) => {
+  try {
+    const response = await axios.post(`https://simpsoncoin.online/api/dex/swaps`, swapData);
+    // Removed console.log statement
+  } catch (error) {
+    console.error('Failed to record swap:', error);
+  }
+};
+
+// Handlers
+const handleSwap = useCallback(() => {
   if (priceImpactWithoutFee && !confirmPriceImpactWithoutFee(priceImpactWithoutFee, t)) {
-    return;
+    return
   }
   if (!swapCallback) {
-    return;
+    return
   }
-
-  setSwapState({ attemptingTxn: true, tradeToConfirm, swapErrorMessage: undefined, txHash: undefined });
-
-  try {
-    swapCallback();
-
-    const amount2 = trade.outputAmount?.toExact();
-
-    const response = await fetch(`https://simpsoncoin.online/api/dex/swaps`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
+  setSwapState({ attemptingTxn: true, tradeToConfirm, swapErrorMessage: undefined, txHash: undefined })
+  swapCallback()
+    .then((hash) => {
+      const amount2 = trade.outputAmount?.toExact();
+      const swapData = {
         walletAddress: account,
         fromCurrency: currencies[Field.INPUT]?.symbol,
         toCurrency: currencies[Field.OUTPUT]?.symbol,
         amount1: parsedIndepentFieldAmount?.toExact(),
         amount2,
-      }),
-    });
+      };
 
-    if (!response.ok) {
-      throw new Error(`Router request failed with status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log('Router response:', result);
-
-    setSwapState({ attemptingTxn: false, tradeToConfirm, swapErrorMessage: undefined, txHash: result.hash });
-  } catch (error: any) {
-    console.error('Error during swap:', error.message);
-    setSwapState({
-      attemptingTxn: false,
-      tradeToConfirm,
-      swapErrorMessage: error.message,
-      txHash: undefined,
-    });
-  }
-}, [priceImpactWithoutFee, swapCallback, tradeToConfirm, t, setSwapState]);
+      recordSwap(swapData);
+      setSwapState({ attemptingTxn: false, tradeToConfirm, swapErrorMessage: undefined, txHash: hash })
+    })
+    .catch((error) => {
+      setSwapState({
+        attemptingTxn: false,
+        tradeToConfirm,
+        swapErrorMessage: error.message,
+        txHash: undefined,
+      })
+    })
+}, [priceImpactWithoutFee, swapCallback, tradeToConfirm, t, setSwapState])
 
   const handleAcceptChanges = useCallback(() => {
     setSwapState({ tradeToConfirm: trade, swapErrorMessage, txHash, attemptingTxn })

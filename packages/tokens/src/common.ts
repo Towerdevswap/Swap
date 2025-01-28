@@ -29,7 +29,7 @@ export const TOWER_MAINNET = new ERC20Token(
 
 export const OFI_TESTNET = new ERC20Token(
   ChainId.ONLY,
-  '0xF6b74a6ca157e990B55B822558CBE5D3147BE508',
+  '0x676C1F954529dC32dA1B038D13Af1ea83cEdc772',
   18,
   'OFI',
   'OnlyFi Token',
